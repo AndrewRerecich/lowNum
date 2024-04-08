@@ -7,21 +7,21 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: check outputs
-      run: python find_lowest_number.py test1_input.txt test1_output.txt
+      run: python3 find_lowest_number.py test1_input.txt test1_output.txt
   run__second_program:
     name: Run second program
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
     - name: check outputs
-      run: python find_lowest_number.py test2_input.txt test2_output.txt
+      run: python3 find_lowest_number.py test2_input.txt test2_output.txt
   run__third_program:
     name: Run third program
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
     - name: check outputs
-      run: python find_lowest_number.py test3_input.txt test3_output.txt
+      run: python3 find_lowest_number.py test3_input.txt test3_output.txt
   check_first_diff:
     name: Check first difference
     runs-on: ubuntu-latest
